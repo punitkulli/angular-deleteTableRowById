@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of data; " [attr.id]="id">  
+      <td>{{d.first}}</td>
+      <td>{{d.last}}</td>
+      <td>{{d.handle}}</td>
+      <td><button (click)="del(d)">del</button></td>
+    </tr>
+  
+  </tbody>
+</table>
